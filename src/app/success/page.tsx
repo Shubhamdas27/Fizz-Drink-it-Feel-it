@@ -3,9 +3,9 @@
 import { Bounded } from "@/components/Bounded";
 import ShopButton from "@/components/ShopButton";
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 
-export default function SuccessPage() {
+function SuccessContent() {
   const searchParams = useSearchParams();
   const sessionId = searchParams.get('session_id');
   const [loading, setLoading] = useState(true);
@@ -117,5 +117,22 @@ export default function SuccessPage() {
         </div>
       </div>
     </Bounded>
+  );
+}
+
+export default function SuccessPage() {
+  return (
+    <Suspense fallback={
+      <Bounded>
+        <div className="min-h-screen bg-gradient-to-b from-green-300 to-yellow-300 flex items-center justify-center">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-orange-600 mx-auto mb-4"></div>
+            <p className="text-xl text-sky-950">Loading...</p>
+          </div>
+        </div>
+      </Bounded>
+    }>
+      <SuccessContent />
+    </Suspense>
   );
 }

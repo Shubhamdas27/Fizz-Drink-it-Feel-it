@@ -28,6 +28,7 @@
 ## ✨ Features
 
 ### 🛍️ Complete E-Commerce Experience
+
 - **Product Catalog**: 5 unique Fizzi flavors with detailed descriptions
 - **Individual Purchases**: Buy single bottles at ₹249 each
 - **Variety Pack**: Get all 5 flavors for ₹1,099 (Special offer!)
@@ -36,18 +37,21 @@
 - **Demo Mode**: Works without Stripe configuration for testing
 
 ### 🎨 Immersive 3D Experience
+
 - **Interactive 3D Models**: Realistic soda can models with flavor-specific labels
 - **Smooth Animations**: GSAP-powered scroll-triggered animations
 - **Dynamic Scenes**: Three.js environments with floating bubbles and effects
 - **Responsive 3D**: Optimized for both desktop and mobile devices
 
 ### 💰 Indian Market Focus
+
 - **Currency**: All prices in Indian Rupees (₹) - No more dollars!
 - **Localized Pricing**: Competitive pricing for the Indian market
 - **Regional Payment Methods**: Supports Indian cards and payment preferences
 - **Shipping**: Configured for Indian addresses
 
 ### 🎯 Modern Web Technologies
+
 - **Next.js 14**: Latest App Router with server components
 - **TypeScript**: Full type safety throughout the codebase
 - **Tailwind CSS**: Utility-first styling with custom configurations
@@ -59,7 +63,9 @@
 🔗 **Live Website**: [Add your deployed URL here]
 
 ### Test the Payment System
+
 Use these Stripe test cards:
+
 - **Successful Payment**: `4242 4242 4242 4242`
 - **Declined Payment**: `4000 0000 0000 0002`
 - **3D Secure**: `4000 0000 0000 3220`
@@ -69,8 +75,9 @@ Use these Stripe test cards:
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 ```bash
-Node.js 18+ 
+Node.js 18+
 npm or yarn
 Git
 ```
@@ -78,12 +85,14 @@ Git
 ### Installation Steps
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/Shubhamdas27/Fizz-Drink-it-Feel-it.git
    cd Fizz-Drink-it-Feel-it
    ```
 
 2. **Install Dependencies**
+
    ```bash
    npm install
    # or
@@ -91,6 +100,7 @@ Git
    ```
 
 3. **Environment Setup**
+
    ```bash
    # Copy the environment template
    cp .env.local.example .env.local
@@ -98,6 +108,7 @@ Git
 
 4. **Configure Stripe (Optional for Demo)**
    Edit `.env.local`:
+
    ```bash
    STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key
    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key
@@ -105,6 +116,7 @@ Git
    ```
 
 5. **Start Development Server**
+
    ```bash
    npm run dev
    # or
@@ -117,18 +129,21 @@ Git
 ## 💳 Stripe Payment Setup
 
 ### Step 1: Create Stripe Account
+
 1. Go to [Stripe Dashboard](https://dashboard.stripe.com/register)
 2. Sign up for a **FREE** Stripe account
 3. Verify your email address
 4. Access your dashboard
 
 ### Step 2: Get API Keys
+
 1. Navigate to **Developers** → **API Keys**
 2. Copy your **Publishable key** (starts with `pk_test_`)
 3. Copy your **Secret key** (starts with `sk_test_`)
 4. These are test keys - safe for development
 
 ### Step 3: Configure Environment
+
 Update your `.env.local` file:
 
 ```bash
@@ -141,6 +156,7 @@ NEXT_PUBLIC_DOMAIN=http://localhost:3000
 ```
 
 ### Step 4: Restart Server
+
 ```bash
 npm run dev
 ```
@@ -160,20 +176,22 @@ npm run dev
 
 ### Product Catalog
 
-| Flavor | Price | Description |
-|--------|-------|-------------|
-| 🍒 Cherry | ₹249 | Refreshing cherry flavored fizzy drink with natural cherry extract |
-| 🍇 Grape | ₹249 | Bold grape flavor with a perfect fizzy kick |
-| 🍋 Lemon Lime | ₹249 | Crisp and citrusy lemon lime combination |
-| 🍓 Strawberry | ₹249 | Sweet strawberry flavor with delightful fizzy sensation |
-| 🍉 Watermelon | ₹249 | Juicy watermelon taste perfect for summer refreshment |
+| Flavor        | Price | Description                                                        |
+| ------------- | ----- | ------------------------------------------------------------------ |
+| 🍒 Cherry     | ₹249  | Refreshing cherry flavored fizzy drink with natural cherry extract |
+| 🍇 Grape      | ₹249  | Bold grape flavor with a perfect fizzy kick                        |
+| 🍋 Lemon Lime | ₹249  | Crisp and citrusy lemon lime combination                           |
+| 🍓 Strawberry | ₹249  | Sweet strawberry flavor with delightful fizzy sensation            |
+| 🍉 Watermelon | ₹249  | Juicy watermelon taste perfect for summer refreshment              |
 
 ### Special Offers
+
 - **Variety Pack**: All 5 flavors for ₹1,099 (Save ₹146!)
 - **Individual Purchase**: ₹249 per bottle
 - **Free Shipping**: On orders above ₹500 (configurable)
 
 ### Shopping Experience
+
 1. **Browse Products**: Interactive product carousel with 3D models
 2. **Select Flavor**: Click on any product to view details
 3. **Buy Now**: Instant purchase with Stripe checkout
@@ -184,7 +202,8 @@ npm run dev
 ## 🎨 Design & Animations
 
 ### Visual Design
-- **Color Palette**: 
+
+- **Color Palette**:
   - Primary: Orange (#EA580C, #FB923C)
   - Secondary: Sky Blue (#0C4A6E, #0EA5E9)
   - Background: Yellow (#FDE047)
@@ -192,18 +211,21 @@ npm run dev
 - **Layout**: Grid-based responsive design system
 
 ### 3D Elements
+
 - **Soda Can Models**: Realistic 3D models with physics-based materials
 - **Interactive Labels**: Each flavor has unique label textures
 - **Dynamic Lighting**: Realistic lighting and shadows
 - **Particle Effects**: Floating bubbles and atmospheric effects
 
 ### Animations
+
 - **Scroll Triggers**: Elements animate as you scroll
 - **Smooth Transitions**: GSAP-powered smooth animations
 - **Loading States**: Interactive loading indicators during checkout
 - **Hover Effects**: Subtle micro-interactions on buttons and products
 
 ### Page Sections
+
 1. **Hero Section**: 3D animated landing with interactive elements
 2. **Product Carousel**: Rotating showcase of all flavors
 3. **Features Section**: Highlighting product benefits
@@ -272,16 +294,19 @@ Fizz-Drink-it-Feel-it/
 ## 🔧 Technical Stack
 
 ### Frontend Framework
+
 - **Next.js 14.2.4**: React framework with App Router
 - **React 18**: Latest React with concurrent features
 - **TypeScript 5.0**: Full type safety and developer experience
 
 ### Styling & UI
+
 - **Tailwind CSS 3.4**: Utility-first CSS framework
 - **Montserrat Font**: Modern, clean typography from Google Fonts
 - **Custom CSS**: Additional styles in `app.css`
 
 ### 3D Graphics & Animation
+
 - **Three.js**: 3D graphics library
 - **@react-three/fiber**: React renderer for Three.js
 - **@react-three/drei**: Useful helpers for R3F
@@ -289,17 +314,20 @@ Fizz-Drink-it-Feel-it/
 - **ScrollTrigger**: Scroll-based animations
 
 ### Payment Processing
+
 - **Stripe**: Secure payment processing
 - **@stripe/stripe-js**: Client-side Stripe integration
 - **Stripe API**: Server-side payment handling
 
 ### Content Management
+
 - **Prismic**: Headless CMS
 - **@prismicio/client**: Prismic JavaScript SDK
 - **@prismicio/next**: Next.js integration
 - **@prismicio/react**: React components
 
 ### Development Tools
+
 - **ESLint**: Code linting
 - **Prettier**: Code formatting
 - **Git**: Version control
@@ -308,6 +336,7 @@ Fizz-Drink-it-Feel-it/
 ## 📱 Responsive Design
 
 ### Breakpoints
+
 ```javascript
 // Tailwind CSS breakpoints used
 sm: 640px    // Small devices
@@ -318,6 +347,7 @@ xl: 1280px   // Desktops
 ```
 
 ### Mobile Optimizations
+
 - **Touch-Friendly**: Large tap targets for mobile users
 - **Performance**: Optimized 3D rendering for mobile devices
 - **Layout**: Stack-based layout on smaller screens
@@ -325,6 +355,7 @@ xl: 1280px   // Desktops
 - **Images**: Responsive images with Next.js optimization
 
 ### Desktop Features
+
 - **3D Interactions**: Full 3D scene rendering
 - **Hover Effects**: Rich hover states and animations
 - **Multi-Column**: Complex grid layouts
@@ -354,7 +385,7 @@ npm run set-up-content # Set up Prismic content
 STRIPE_SECRET_KEY=sk_test_...
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
 
-# Application configuration  
+# Application configuration
 NEXT_PUBLIC_DOMAIN=http://localhost:3000
 
 # Prismic (auto-generated)
@@ -373,17 +404,20 @@ PRISMIC_REPOSITORY_NAME=your-repo-name
 ### Common Development Tasks
 
 **Adding a New Product Flavor:**
+
 1. Add label image to `/public/labels/`
 2. Update `flavorTextures` in `SodaCan.tsx`
 3. Add product to `products` array in `/app/shop/page.tsx`
 4. Update Prismic content if needed
 
 **Modifying Stripe Payments:**
+
 1. Update API route in `/app/api/checkout/route.ts`
 2. Modify client-side logic in `/lib/stripe.ts`
 3. Test with Stripe test cards
 
 **Adding New Animations:**
+
 1. Use GSAP in component `useGSAP` hooks
 2. Register ScrollTrigger if needed
 3. Optimize for mobile performance
@@ -391,30 +425,35 @@ PRISMIC_REPOSITORY_NAME=your-repo-name
 ## 🌟 Key Achievements
 
 ### ✅ E-Commerce Implementation
+
 - **Complete Shop**: Fully functional product catalog with 5 flavors
 - **Stripe Integration**: Secure payment processing with Indian Rupees
 - **Order Management**: Success pages and confirmation system
 - **Error Handling**: Graceful error handling and user feedback
 
 ### ✅ 3D Experience
+
 - **Interactive Models**: Realistic 3D soda cans with custom labels
 - **Smooth Animations**: GSAP-powered scroll-triggered animations
 - **Performance**: Optimized for both desktop and mobile devices
 - **Visual Effects**: Particle systems and dynamic lighting
 
 ### ✅ Technical Excellence
+
 - **Modern Stack**: Latest Next.js 14 with TypeScript and Tailwind
 - **Clean Code**: Well-structured, maintainable codebase
 - **Responsive Design**: Works perfectly on all screen sizes
 - **SEO Optimized**: Proper meta tags and semantic HTML
 
 ### ✅ User Experience
+
 - **Intuitive Navigation**: Clear user flow from landing to purchase
 - **Fast Loading**: Optimized images and code splitting
 - **Accessible**: Proper ARIA labels and keyboard navigation
 - **Mobile-First**: Designed for mobile users primarily
 
 ### ✅ Indian Market Focus
+
 - **Currency Conversion**: All pricing in Indian Rupees (₹)
 - **Local Pricing**: Competitive pricing for Indian market
 - **Payment Methods**: Supports Indian payment preferences
@@ -425,12 +464,14 @@ PRISMIC_REPOSITORY_NAME=your-repo-name
 ### Vercel Deployment (Recommended)
 
 1. **Connect Repository**
+
    ```bash
    # Push your code to GitHub (already done)
    git push origin main
    ```
 
 2. **Deploy on Vercel**
+
    - Go to [vercel.com](https://vercel.com)
    - Import your GitHub repository
    - Add environment variables:
@@ -447,15 +488,18 @@ PRISMIC_REPOSITORY_NAME=your-repo-name
 ### Other Deployment Options
 
 **Netlify:**
+
 - Similar to Vercel, drag and drop or GitHub integration
 - Configure build settings: `npm run build` and publish directory `out`
 
 **Railway:**
+
 - Connect GitHub repository
 - Add environment variables
 - Deploy with one click
 
 **Traditional Hosting:**
+
 - Run `npm run build`
 - Upload the `.next` folder contents
 - Configure Node.js environment
@@ -479,6 +523,7 @@ PRISMIC_REPOSITORY_NAME=your-repo-name
 We welcome contributions! Here's how you can help:
 
 ### Ways to Contribute
+
 - 🐛 Report bugs and issues
 - 💡 Suggest new features
 - 🔧 Submit pull requests
@@ -488,26 +533,31 @@ We welcome contributions! Here's how you can help:
 ### Development Process
 
 1. **Fork the Repository**
+
    ```bash
    git clone https://github.com/your-username/Fizz-Drink-it-Feel-it.git
    ```
 
 2. **Create Feature Branch**
+
    ```bash
    git checkout -b feature/amazing-feature
    ```
 
 3. **Make Changes**
+
    - Follow existing code style
    - Add tests if applicable
    - Update documentation
 
 4. **Commit Changes**
+
    ```bash
    git commit -m "Add amazing feature"
    ```
 
 5. **Push to Branch**
+
    ```bash
    git push origin feature/amazing-feature
    ```
@@ -518,6 +568,7 @@ We welcome contributions! Here's how you can help:
    - Wait for review
 
 ### Code Standards
+
 - **TypeScript**: Use proper typing
 - **React**: Follow React best practices
 - **Tailwind**: Use utility classes consistently
@@ -529,8 +580,9 @@ We welcome contributions! Here's how you can help:
 This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
 
 ### What this means:
+
 - ✅ Commercial use allowed
-- ✅ Modification allowed  
+- ✅ Modification allowed
 - ✅ Distribution allowed
 - ✅ Private use allowed
 - ❌ No trademark use
@@ -542,7 +594,7 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 Special thanks to:
 
 - **[Prismic](https://prismic.io/)** - Headless CMS platform
-- **[Stripe](https://stripe.com/)** - Payment processing platform  
+- **[Stripe](https://stripe.com/)** - Payment processing platform
 - **[Three.js](https://threejs.org/)** - 3D graphics library
 - **[GSAP](https://gsap.com/)** - Animation library
 - **[Next.js Team](https://nextjs.org/)** - React framework
@@ -556,6 +608,7 @@ Special thanks to:
 **GitHub Issues**: [Open an issue](https://github.com/Shubhamdas27/Fizz-Drink-it-Feel-it/issues)
 
 **Common Issues:**
+
 - Stripe payments not working? Check your API keys
 - 3D models not loading? Ensure all assets are uploaded
 - Build errors? Verify Node.js version compatibility
@@ -563,6 +616,7 @@ Special thanks to:
 ### Developer
 
 **👨‍💻 Shubham Das**
+
 - GitHub: [@Shubhamdas27](https://github.com/Shubhamdas27)
 - Email: [Your email here]
 - LinkedIn: [Your LinkedIn here]
@@ -575,7 +629,7 @@ Special thanks to:
 
 **🔗 [Live Demo](https://your-deployed-url.com) | 🛒 [Shop Now](https://your-deployed-url.com/shop) | 📚 [Documentation](https://github.com/Shubhamdas27/Fizz-Drink-it-Feel-it)**
 
-*Made with ❤️ by Shubham Das*
+_Made with ❤️ by Shubham Das_
 
 </div>
 
@@ -584,6 +638,7 @@ Special thanks to:
 ## 🔄 Changelog
 
 ### v1.0.0 (Latest)
+
 - ✅ Initial release with complete e-commerce functionality
 - ✅ Stripe payment integration with Indian Rupees
 - ✅ 3D animated product showcase
@@ -592,6 +647,7 @@ Special thanks to:
 - ✅ Comprehensive documentation
 
 ### Upcoming Features
+
 - 🔄 User authentication and accounts
 - 🔄 Shopping cart persistence
 - 🔄 Order history tracking
@@ -601,4 +657,4 @@ Special thanks to:
 
 ---
 
-*Last updated: September 25, 2025*
+_Last updated: September 25, 2025_
